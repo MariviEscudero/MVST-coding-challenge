@@ -48,8 +48,8 @@ const App = () => {
     }
   }, [userData]);
 
-  //console.log(userData);
-  //console.log(reposInfo);
+  console.log(userData);
+  console.log(reposInfo);
 
   const handleSearchInput = (value) => {
     setSearchInput(value);

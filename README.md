@@ -36,14 +36,11 @@ Then you can see that:
 - This project has been deployed with Heroku at this site:
 https://endearing-puppy-75b851.netlify.app/
 
-- It's also be available at GitHub pages published at:
-https://mariviescudero.github.io/MVST-coding-challenge/
-
 ## Built with
 
 - HTML
 - SASS
-- JavaScript (unfortunately)
+- JavaScript
 - React
 
 ## Code Quality
