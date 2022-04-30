@@ -5,6 +5,7 @@ import RepoList from './RepoList';
 import FilterByName from './FilterByName';
 
 const App = () => {
+
   const [userData, setUserData] = useState([]);
   const [reposInfo, setReposInfo] = useState([]);
   const [searchInput, setSearchInput] = useState('');
@@ -47,8 +48,8 @@ const App = () => {
     }
   }, [userData]);
 
-  console.log(userData);
-  console.log(reposInfo);
+  //console.log(userData);
+  //console.log(reposInfo);
 
   const handleSearchInput = (value) => {
     setSearchInput(value);

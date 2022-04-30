@@ -33,11 +33,17 @@ Then you can see that:
 
 ### Deployment
 
+- This project has been deployed with Heroku at this site:
+https://endearing-puppy-75b851.netlify.app/
+
+- It's also be available at GitHub pages published at:
+https://mariviescudero.github.io/MVST-coding-challenge/
 
 ## Built with
 
 - HTML
 - SASS
+- JavaScript (unfortunately)
 - React
 
 ## Code Quality
@@ -46,6 +52,7 @@ Then you can see that:
 
 ## Future improvements
 
+- Migrate from JavaScript to TypeScript
 - Imrovement of test
 - Migrate from  GitHub API REST to V4 API, which is built using GraphQL
 
