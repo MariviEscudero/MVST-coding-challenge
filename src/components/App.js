@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import '../styles/App.scss';
 import UserInfo from './UserInfo';
-//import UsersList from './UsersList';
+import RepoList from './RepoList';
 
 const App = () => {
   const [userData, setUserData] = useState([]);
@@ -45,12 +45,12 @@ const App = () => {
   }, [userData]);
 
   console.log(userData);
-  console.log(userData.repos);
   console.log(reposInfo);
 
   return (
     <div className="App">
       <UserInfo data={userData} />
+      <RepoList data={reposInfo} />
     </div>
   );
 };
