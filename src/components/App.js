@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import '../styles/App.scss';
 import UserInfo from './UserInfo';
 import RepoList from './RepoList';
-import FilterByName from './FilterByName';
+import SearchField from './SearchField';
 
 const App = () => {
   const [userData, setUserData] = useState([]);
@@ -58,7 +58,7 @@ const App = () => {
   return (
     <div className="App">
       <UserInfo data={userData} />
-      <FilterByName
+      <SearchField
         handleSearchInput={handleSearchInput}
         inputValue={searchInput}
       />

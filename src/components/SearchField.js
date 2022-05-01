@@ -1,6 +1,5 @@
-import '../styles/FilterByName.scss';
-const FilterByName = (props) => {
-
+import '../styles/SearchField.scss';
+const SearchField = (props) => {
   const filterInput = (ev) => {
     ev.preventDefault();
     props.handleSearchInput(ev.currentTarget.value);
@@ -22,10 +21,8 @@ const FilterByName = (props) => {
     </form>
   );
 };
-
-FilterByName.defaultProps = {
+SearchField.defaultProps = {
   inputType: 'text',
   require: false,
 };
-
-export default FilterByName;
+export default SearchField;

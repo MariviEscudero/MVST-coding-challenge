@@ -18,7 +18,7 @@
   justify-content: right;
   align-items: right;
   margin-top: 4vh;
-  @media(min-width: 1024px){
+  @media (min-width: 1024px) {
     flex-direction: row;
     justify-content: space-between;
     align-items: right;
@@ -26,6 +26,15 @@
 }
 .repo__list--item__desc {
   margin: 4vh 0 2vh 0;
+}
+.visibility_span_label{
+  background-color: $greyspan;
+  font-weight: 400;
+  font-size: 0.6em;
+  color: $black;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 0 5px 0 5px;
 }
 .language_span_label {
   display: inline-block;
@@ -36,7 +45,7 @@
   margin-right: 10px;
 }
 .license_span_label {
- display: inline-block;
+  display: inline-block;
   background-color: $bluespan;
   width: 10px;
   height: 10px;
@@ -45,12 +54,12 @@
 }
 .update_span_label {
   display: inline-block;
-   background-color: yellowgreen;
-   width: 10px;
-   height: 10px;
-   border-radius: 5px;
-   margin-right: 10px;
- }
-.hidden{
-    display: none;
+  background-color: yellowgreen;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.hidden {
+  display: none;
 }

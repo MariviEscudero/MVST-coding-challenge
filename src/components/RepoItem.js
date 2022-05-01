@@ -10,7 +10,7 @@ const RepoItem = (props) => {
         rel="noreferrer"
       >
         <h1 className="repo__list--item__link--name">
-          {props.dataList.reponame}
+          {props.dataList.reponame} <span className="visibility_span_label">{props.dataList.visibility}</span>
         </h1>
       </a>
       <p className="repo__list--item__desc">{props.dataList.description}</p>
