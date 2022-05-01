@@ -6,6 +6,15 @@ const RepoList = (props) => {
       <RepoItem dataList={repoData} />
     </li>
   ));
-  return <ul className="repo__list">{repoList}</ul>;
+
+  if (repoList.length) {
+    return <ul className="repo__list">{repoList}</ul>;
+  } else {
+    return (
+      <p className="repo__list">
+        Ups, repository not found at this page
+      </p>
+    );
+  }
 };
 export default RepoList;

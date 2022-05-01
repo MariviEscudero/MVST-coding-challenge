@@ -1,29 +1,31 @@
 @import 'core/variables';
 @import 'core/reset';
-.main__form{
-        position: fixed;
-        top: 0;
-        background-color: white;
-        font-size: 1em;
-        padding: 10px;
-        border-bottom: solid 1px $transparentgrey;
-        display: flex;
-        align-items: center;
-    
-    @media (min-width: 768px){
-        grid-area: 1/2/2/3; 
-        position: inherit;
-        top: auto;
-    }
-   
-    &--label{
-        font-size: 1.2em;
-        padding-right: 2em;
-    }
-    &--input{
-        border-radius: 5px;
-        border: solid 1px $transparentblack;
-        width: 50vw;
-        height: 3vh;
-    }
+.main__form {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  font-size: 1em;
+  padding: 10px;
+  border-bottom: solid 1px $transparentgrey;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    grid-area: 1/2/2/3;
+    position: inherit;
+    top: auto;
+    width: auto;
+  }
+
+  &--label {
+    font-size: 1.2em;
+    padding-right: 2em;
+  }
+  &--input {
+    border-radius: 5px;
+    border: solid 1px $transparentblack;
+    width: 50vw;
+    height: 3vh;
+  }
 }
