@@ -39,7 +39,6 @@ const App = () => {
               language: dat.language === null ? 'Not defined' : dat.language,
               visibility: dat.visibility === null ? 'Unknown' : dat.visibility,
               license: dat.license === null ? 'None' : dat.license,
-              updated: dat.updated_at,
             };
           });
           setReposInfo(filteredRepos);

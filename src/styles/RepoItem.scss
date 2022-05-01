@@ -18,14 +18,19 @@
   justify-content: right;
   align-items: right;
   margin-top: 4vh;
+
   @media (min-width: 1024px) {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: left;
     align-items: right;
   }
+ 
 }
 .repo__list--item__desc {
   margin: 4vh 0 2vh 0;
+}
+.repo__list--item__language{
+  margin-right: 30px;
 }
 .visibility_span_label{
   background-color: $greyspan;
