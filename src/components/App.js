@@ -38,7 +38,7 @@ const App = () => {
               description: dat.description === null ? '' : dat.description,
               language: dat.language === null ? 'Not defined' : dat.language,
               visibility: dat.visibility === null ? 'Unknown' : dat.visibility,
-              license: dat.license.name === null ? 'None' : dat.license.name,
+              license: dat.license === null ? 'None' : dat.license,
               updated: dat.updated_at,
             };
           });
