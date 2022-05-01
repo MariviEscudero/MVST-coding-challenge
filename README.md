@@ -8,6 +8,7 @@ I had liked to finish all the issues of this project, I had learned about the th
 - Migrate from JavaScript to TypeScript
 - Imrovement of test
 - Migrate from  GitHub API REST to V4 API, which is built using GraphQL
+- Code documented
 ## Feedback about this challenge
 
 I have enjoyed doing this project, an learn about technologies that I dont't use, and practicing and learning more about the languages that I know. Thank yoy very much for this time and for the opportunity.
@@ -56,12 +57,6 @@ npm run githubpages
 - SASS
 - JavaScript
 - React
-## Code Quality
-
-
-
-
-
 ## License 
 
 [MIT](https://opensource.org/licenses/MIT)
