@@ -1,7 +1,7 @@
 @import 'core/variables';
 @import 'core/reset';
-
 .repo__list{
+    margin: 0 20px 0 20px;
     grid-area: 2/2/3/3;
     &--item{
         padding-bottom: 5vh;

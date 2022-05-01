@@ -16,11 +16,11 @@ const RepoItem = (props) => {
       <p className="repo__list--item__desc">{props.dataList.description}</p>
       <div className="repo__list--item__flex">
         <p className={props.dataList.language === 'Not defined'? 'hidden' : 'repo__list--item__license'}>
-          <span className="language_span_label">Main Language</span>
+          <span className="language_span_label"></span>
           {props.dataList.language}
         </p>
         <p className={props.dataList.license.name ? 'repo__list--item__license': 'hidden'}>
-          <span className="license_span_label">License</span>
+          <span className="license_span_label"></span>
           {props.dataList.license.name}
         </p>
         <p className="repo__list--item__updated">

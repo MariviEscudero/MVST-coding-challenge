@@ -8,31 +8,40 @@
   &--name {
     color: $bluerepo;
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     margin: 4vh 0 2vh 0;
   }
 }
 .repo__list--item__flex {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: right;
   align-items: right;
   margin-top: 4vh;
+  @media(min-width: 1024px){
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: right;
+  }
 }
 .repo__list--item__desc {
   margin: 4vh 0 2vh 0;
 }
 .language_span_label {
+  display: inline-block;
   background-color: $greyspan;
+  width: 10px;
+  height: 10px;
   border-radius: 5px;
-  margin-right: 15px;
-  padding: 0 1rem 0 1rem;
+  margin-right: 10px;
 }
 .license_span_label {
+ display: inline-block;
   background-color: $bluespan;
+  width: 10px;
+  height: 10px;
   border-radius: 5px;
-  margin-right: 15px;
-  padding: 0 1rem 0 1rem;
+  margin-right: 10px;
 }
 .hidden{
     display: none;
