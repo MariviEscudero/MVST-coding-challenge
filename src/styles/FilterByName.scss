@@ -12,7 +12,8 @@
     
     @media (min-width: 768px){
         grid-area: 1/2/2/3; 
-        position: relative;
+        position: inherit;
+        top: auto;
     }
    
     &--label{

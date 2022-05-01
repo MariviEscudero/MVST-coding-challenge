@@ -23,7 +23,7 @@ const RepoItem = (props) => {
           <span className="license_span_label"></span>
           {props.dataList.license.name}
         </p>
-        <p className="repo__list--item__updated">
+        <p className="repo__list--item__updated"><span className="update_span_label"></span>
           Updated at {props.dataList.updated}
         </p>
       </div>
