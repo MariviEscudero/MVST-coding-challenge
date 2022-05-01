@@ -11,7 +11,9 @@ I had liked to finish all the issues of this project, I had learned about the th
 - Code documented
 ## Feedback about this challenge
 
-I have enjoyed doing this project, an learn about technologies that I dont't use, and practicing and learning more about the languages that I know. Thank yoy very much for this time and for the opportunity.
+I have enjoyed doing this project, an learning about technologies that I dont't use, and practicing and learning more about the languages that I know. Thank yoy very much for this time and for the opportunity.
+I also appreciate the information provided on UX and code documentation, it has been very useful to improve the work and interesting.
+
 ## Usage
 
 The project is based on GitHub API REST, with user data and repositories list with a filter that allows search them by name.
