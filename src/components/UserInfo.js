@@ -1,4 +1,7 @@
 import '../styles/UserInfo.scss';
+
+//Rendering of user information obtained by fetching the API in App.js, and defined by props
+
 const UserInfo = (props) => {
   return (
     <div className="grid">

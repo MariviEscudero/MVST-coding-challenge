@@ -5,9 +5,18 @@ import RepoList from './RepoList';
 import SearchField from './SearchField';
 
 const App = () => {
+  //Data user useState
   const [userData, setUserData] = useState([]);
+
+  //User repos information useState
   const [reposInfo, setReposInfo] = useState([]);
+
+  //useState of input text typing to find a repo
   const [searchInput, setSearchInput] = useState('');
+
+  // Hook useEffect to obtain API REST user data when the app is initialized
+  //API url for a Json users list: https://api.github.com/users
+  //API url for an only user list: https://api.github.com/users/{user}
 
   useEffect(() => {
     fetch(`https://api.github.com/users/MariviEscudero`)
@@ -24,6 +33,10 @@ const App = () => {
         setUserData(userData);
       });
   }, []);
+
+  //Hook useEffect to obtain Json of listed repositories of the user obtained before
+  //Is necessary the data.repos_url to make the consult to API, and
+  //Is necessary to start the useEffect after the previous, with }, [userData]);
 
   useEffect(() => {
     if (userData.repos) {
@@ -46,13 +59,19 @@ const App = () => {
     }
   }, [userData]);
 
+  //This function catch input value to use it to filter by it
+
   const handleSearchInput = (value) => {
     setSearchInput(value);
   };
 
+  //Filtering repo by name
+
   const filteredRepo = reposInfo.filter((repo) =>
     repo.reponame.toLocaleLowerCase().includes(searchInput.toLocaleLowerCase())
   );
+
+  //Rendering of the imported App components
 
   return (
     <div className="App">

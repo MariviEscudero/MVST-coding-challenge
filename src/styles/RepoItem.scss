@@ -24,15 +24,14 @@
     justify-content: left;
     align-items: right;
   }
- 
 }
 .repo__list--item__desc {
   margin: 4vh 0 2vh 0;
 }
-.repo__list--item__language{
+.repo__list--item__language {
   margin-right: 30px;
 }
-.visibility_span_label{
+.visibility_span_label {
   background-color: $greyspan;
   font-weight: 400;
   font-size: 0.6em;
