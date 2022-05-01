@@ -1,5 +1,32 @@
 @import 'core/variables';
 @import 'core/reset';
-.main__list--card__title{
-    background-color: red;
+.repo__list--item__link {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline $bluerepo;
+  }
+  &--name {
+    color: $bluerepo;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 4vh 0 2vh 0;
+  }
+}
+.repo__list--item__flex {
+  display: flex;
+  justify-content: first baseline;
+  flex-grow: 4;
+}
+.repo__list--item__desc {
+  margin: 4vh 0 2vh 0;
+}
+.language_span_label {
+  background-color: grey;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+.license_span_label {
+  background-color: aquamarine;
+  border-radius: 5px;
+  margin-right: 15px;
 }

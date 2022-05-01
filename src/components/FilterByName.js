@@ -1,15 +1,15 @@
-//import '../styles/FilterByName.scss';
+import '../styles/FilterByName.scss';
 const FilterByName = (props) => {
-  
+
   const filterInput = (ev) => {
     ev.preventDefault();
     props.handleSearchInput(ev.currentTarget.value);
   };
 
   return (
-    <div>
+    <form className = "main__form">
       <label className="main__form--label" htmlFor={props.name}>
-        Name
+       Repository Name
       </label>
       <input
         className="main__form--input"
@@ -19,7 +19,7 @@ const FilterByName = (props) => {
         value={props.inputValue}
         onChange={filterInput}
       />
-    </div>
+    </form>
   );
 };
 

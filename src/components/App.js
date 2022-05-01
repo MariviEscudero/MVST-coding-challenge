@@ -41,6 +41,7 @@ const App = () => {
               language: dat.language === null ? 'Unknown' : dat.language,
               visibility: dat.visibility === null ? 'Unknown' : dat.visibility,
               license: dat.license === null ? 'Unknown' : dat.license,
+              updated: dat.updated_at,
             };
           });
           setReposInfo(filteredRepos);

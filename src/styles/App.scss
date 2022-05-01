@@ -2,4 +2,8 @@
 @import 'core/reset';
 .App{
     font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 10% 90%;
 }
