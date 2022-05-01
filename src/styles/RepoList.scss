@@ -3,4 +3,8 @@
 
 .repo__list{
     grid-area: 2/2/3/3;
+    &--item{
+        padding-bottom: 5vh;
+        border-bottom: solid 1px $transparentgrey;
+    }
 }

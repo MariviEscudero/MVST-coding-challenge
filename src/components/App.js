@@ -5,7 +5,6 @@ import RepoList from './RepoList';
 import FilterByName from './FilterByName';
 
 const App = () => {
-
   const [userData, setUserData] = useState([]);
   const [reposInfo, setReposInfo] = useState([]);
   const [searchInput, setSearchInput] = useState('');
@@ -36,11 +35,10 @@ const App = () => {
               id: dat.id,
               reponame: dat.name === null ? 'Unknown' : dat.name,
               htmlurl: dat.html_url === null ? 'Unknown' : dat.html_url,
-              description:
-                dat.description === null ? 'Unknown' : dat.description,
-              language: dat.language === null ? 'Unknown' : dat.language,
+              description: dat.description === null ? '' : dat.description,
+              language: dat.language === null ? 'Not defined' : dat.language,
               visibility: dat.visibility === null ? 'Unknown' : dat.visibility,
-              license: dat.license === null ? 'Unknown' : dat.license,
+              license: dat.license.name === null ? 'None' : dat.license.name,
               updated: dat.updated_at,
             };
           });
